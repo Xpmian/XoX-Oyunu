@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="Oyuncu İsmi"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/A1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon1"
+            android:adjustViewBounds="true" />
+
+        <EditText
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/BirinciOyuncu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/A1"
+            android:layout_marginEnd="20dp"
+            android:hint="Birinci Oyuncu"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/A1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon2"
+            android:adjustViewBounds="true" />
+
+        <EditText
+            android:inputType="text"
+            android:maxLines="1"
+            android:id="@+id/ikinciOyuncu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/A1"
+            android:layout_marginEnd="20dp"
+            android:hint="İkinci Oyuncu"
+            android:textColorHint="@color/black"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/oyunbasla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oyuna Başla"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/tasarim1">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>
